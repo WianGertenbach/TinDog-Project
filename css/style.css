@@ -1,0 +1,373 @@
+:root {
+  --color1: #ffffff;
+  --color2: #212529;
+  --color2variant: #ebebeb;
+  --accent1: #f9576b;
+  --accent2: #6d94c7;
+  --ff: "Lora", serif;
+  --h1-title: 700 48px/1.2 var(--ff);
+  --h1-color: var(--color2);
+  --h2-sectitle: normal 48/1.2 var(--ff);
+  --h3: bold 24px/1.2 var(--ff);
+  --h3-color: #4e4848;
+  --h4: normal 24px/1.2 var(--ff);
+  --p: normal 16px/1.2 var(--ff);
+  --btn: 600 20px/1.2 var(--ff);
+}
+  
+h1 {
+  font: var(--h1-title);
+  color: var(--h1-color);
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font: var(--h3);
+  color: var(--h3-color);
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font: var(--h4);
+  color: var(--h3-color);
+  font-size: 18px;
+  margin: 24px;
+  padding: 0;
+}
+
+p {
+  font: var(--p);
+  margin: 0;
+  margin: 12px 0px;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  padding:0;
+}
+
+#title {
+  padding-top: 48px;
+  background: var(--accent1);
+  display: flex;  
+  margin:0;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%
+}
+
+.div1title {
+  flex: 1;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 24px;
+  padding-left: 80px ;
+}
+
+.div1title>h1 {
+  max-width: 515px;
+}
+
+.div2title {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  padding-left: 80px;
+  padding-right: 24px;
+  margin-top: 48px;  
+}
+
+
+.btn-1 {
+  color: var(--color2);
+  background-color: var(--color1);
+  border-radius: 50px;
+  font: var(--btn);
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-right: 40px;
+  display: inline-block;
+}
+
+.btn-2 {
+  color: var(--color2);
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid white;
+  font: var(--btn);
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-right: 40px;
+  display: inline-block;
+}
+
+#features {
+  padding: 64px;
+  background: var(--color1); 
+  margin:0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  gap: 32px;
+  
+}
+
+.featuresdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  padding:0;
+}
+
+.divicon {
+  width: 30px;
+  height: 30px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: center;
+  background-color: var(--color2variant);
+  padding: 12px;
+}
+
+.divtext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  max-width: 220px;
+}
+
+#testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+  padding: 72px 0px 72px 0px;
+  background-color: var(--color2variant);
+}
+
+.testimonialdiv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 72px 72px 72px 72px;
+}
+
+.masked-image {
+  width: 227px;
+  height: 227px;
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 65%, transparent 0%);
+  margin-top: 64px;
+}
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  padding:0px 48px;
+  max-width: fit-content;
+}
+
+.brandimage {
+  max-width: 120px;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 64px 0px;
+}
+
+.pricetitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 24px;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  height: 100%;
+  padding: 50px;
+  gap: 48px;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1;
+  height: auto;
+  background-color: var(--colorsecondary);
+  padding: 24px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 20px rgb(124, 124, 124,0.5);
+  border-radius: 10px;
+  max-width: 260px;
+  justify-content: space-between;
+}
+
+.cardheader {
+  text-align: center;
+  background: #EBEBEB;
+  width: 100%;
+  padding: 0px 24px;
+  border-radius: 10px;
+}
+
+.cardheader-2 {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+li {
+  list-style: none;
+  font: var(--p);
+  text-align: center;
+  margin: 8px;
+  color: var(--h3-color);
+}
+
+ul {
+  padding: 0;
+  padding-top: 24px;
+  margin: 0;
+}
+
+.cardbtn {
+  margin: 0;
+  background-color: var(--color1);
+  border: 2px solid var(--color2);
+  text-align: center;
+  padding: 5px 30px;
+  margin-top: 24px;
+  font-size: 16px;
+}
+
+.cardbtn-2 {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: var(--accent1);
+}
+
+.footermenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  width: 100%;
+  padding: 48px 0px;
+}
+
+.footermenu li {
+  color: var(--color1);
+}
+
+
+
+
+
+@media (max-width:1015px) {
+  .title-sec {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .div2title {
+    padding: 72px;
+    padding-bottom: 0px;
+  }
+  .div1title {
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 0px;
+  }
+  .divbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+  }
+  .h1small {
+    text-align: center;
+  }
+  .btn-1 {
+    margin-right: 0;
+  }
+  .btn-2 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width:900px){
+  .h3small {
+    font-size: 18px;
+  }
+  .divicon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+
+@media (max-width: 700px){
+  #features {
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr, 1fr, 1fr;    
+  }
+}
+
+@media (max-width: 500px){
+  h1 {
+    font-size: 32px;
+  }
+  .btn-1 {
+    font-size: 16px;
+  }
+  .btn-2 {
+    font-size: 16px;
+  }
+
+  .brands {
+    flex-direction: column;
+    padding: 0;
+    gap: 64px;
+  }
+
+
+}
